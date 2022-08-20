@@ -361,6 +361,120 @@ This is a Multiple line comment
           </ul>
         </div>
       </div>
+      <!--Variables-->
+      <div class="mt-8">
+        <h2 class="semi-title">Variables</h2>
+        <div class="flex flex-col gap-5 mt-5">
+          <p class="p-main indent-8">
+            Variabel adalah wadah data. Variabel digunakan untuk menyimpan data
+            di lokasi memori. Ketika sebuah variabel dideklarasikan, lokasi
+            memori dicadangkan. Ketika sebuah variabel ditetapkan ke suatu nilai
+            (data), ruang memori akan diisi dengan data tersebut. Untuk
+            mendeklarasikan variabel, kita menggunakan kata kunci var , let ,
+            atau const.
+          </p>
+          <p class="p-main indent-8">
+            Untuk variabel yang berubah pada waktu yang berbeda, kami
+            menggunakan let . Jika data tidak berubah sama sekali, kami
+            menggunakan const . Misalnya, PI, nama negara, gravitasi tidak
+            berubah, dan kita dapat menggunakan const . Kami tidak akan
+            menggunakan var dalam tantangan ini dan saya tidak menyarankan Anda
+            untuk menggunakannya. Ini adalah cara yang rawan kesalahan untuk
+            mendeklarasikan variabel yang memiliki banyak kebocoran. Kami akan
+            berbicara lebih banyak tentang var, let, dan const secara rinci di
+            bagian lain (lingkup). Untuk saat ini, penjelasan di atas sudah
+            cukup.
+          </p>
+          <p class="p-main indent-8">
+            Nama variabel JavaScript yang valid harus mengikuti aturan berikut:
+          </p>
+          <ul class="px-5 list-disc list-inside p-main">
+            <li>Nama variabel JavaScript tidak boleh dimulai dengan angka.</li>
+            <li>
+              Nama variabel JavaScript tidak mengizinkan karakter khusus kecuali
+              tanda dolar dan garis bawah.
+            </li>
+            <li>Nama variabel JavaScript mengikuti konvensi camelCase.</li>
+            <li>
+              Nama variabel JavaScript tidak boleh memiliki spasi di antara
+              kata-kata.
+            </li>
+          </ul>
+          <highlightjs
+            lang="js"
+            code="firstName
+lastName
+country
+city
+capitalCity
+age
+isMarried
+
+first_name
+last_name
+is_married
+capital_city
+
+num1
+num_1
+_num_1
+$num1
+year2020
+year_2020"
+          />
+          <p class="p-main indent-8">
+            Mari kita mendeklarasikan variabel dengan tipe data yang berbeda.
+            Untuk mendeklarasikan variabel, kita perlu menggunakan kata kunci
+            let atau const sebelum nama variabel. Mengikuti nama variabel, kami
+            menulis tanda sama dengan (operator penugasan), dan nilai (data yang
+            ditetapkan).
+          </p>
+          <highlightjs
+            lang="js"
+            code="// Syntax
+let nameOfVariable = value"
+          />
+          <p class="p-main indent-8">
+            NameOfVriable adalah nama yang menyimpan data nilai yang berbeda.
+            Lihat di bawah untuk contoh detail.
+          </p>
+          <h2 class="font-cff">Contoh variabel yang dideklarasikan :</h2>
+          <highlightjs
+            lang="js"
+            code="// Declaring different variables of different data types
+let firstName = 'Asabeneh' // first name of a person
+let lastName = 'Yetayeh' // last name of a person
+let country = 'Finland' // country
+let city = 'Helsinki' // capital city
+let age = 100 // age in years
+let isMarried = true
+
+console.log(firstName, lastName, country, city, age, isMarried)"
+          />
+          <highlightjs
+            lang="js"
+            code="Asabeneh Yetayeh Finland Helsinki 100 true"
+          />
+          <highlightjs
+            lang="js"
+            code="// Declaring variables with number values
+let age = 100 // age in years
+const gravity = 9.81 // earth gravity  in m/s2
+const boilingPoint = 100 // water boiling point, temperature in °C
+const PI = 3.14 // geometrical constant
+console.log(gravity, boilingPoint, PI)"
+          />
+          <highlightjs lang="js" code="9.81 100 3.14" />
+          <highlightjs
+            lang="js"
+            code="// Variables can also be declaring in one line separated by comma, however I recommend to use a seperate line to make code more readble
+let name = 'Asabeneh', job = 'teacher', live = 'Finland'
+console.log(name, job, live)"
+          />
+          <highlightjs lang="js" code="Asabeneh teacher Finland" />
+          <p class="p-main">Jalankan file index.html</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
