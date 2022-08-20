@@ -1,0 +1,29 @@
+@import "./base.css";
+
+.semi-title {
+  @apply font-bold underline font-cff text-base;
+}
+
+.p-main {
+  @apply font-cff tracking-tight text-justify;
+}
+
+.title-style {
+  @apply text-xl text-center;
+}
+
+.button-style {
+  @apply bg-[#f7df1e] px-2 py-0.5 text-sm;
+}
+
+.nav-set {
+  @apply w-full bg-zinc-900 drop-shadow-md justify-between flex-wrap z-10 fixed flex p-4;
+}
+
+.ttl {
+  @apply font-bold uppercase flex-wrap mt-3 text-center text-lg tracking-widest;
+}
+
+.btn {
+  @apply dark:bg-[#202023] flex flex-wrap mt-4 w-36 justify-center uppercase text-sm rounded-lg drop-shadow-sm ease-in-out transition duration-300 hover:dark:bg-[#0c0c0d] mx-auto px-6 font-semibold py-2;
+}
