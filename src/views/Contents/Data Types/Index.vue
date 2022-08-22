@@ -296,7 +296,7 @@ let quotWithBackTick = `The saying,'Seeing is Believing' is not correct in 2020.
           </p>
         </div>
       </div>
-      <!--String (Penggabungan String)-->
+      <!--String (Menggabungkan Menggunakan Operator Penambahan)-->
       <div class="mt-8">
         <h2 class="semi-title">
           String (Menggabungkan Menggunakan Operator Penambahan)
@@ -325,6 +325,71 @@ let personInfoOne = fullName + '. I am ' + age + '. I live in ' + country; // ES
 
 console.log(personInfoOne)</prism></pre>
           <pre><prism language="javascript">Asabeneh Yetayeh. I am 250. I live in Finland</prism></pre>
+        </div>
+      </div>
+      <!--String (String Literal Panjang)-->
+      <div class="mt-8">
+        <h2 class="semi-title">String (String Literal Panjang)</h2>
+        <div class="flex flex-col gap-5 mt-5">
+          <p class="p-main indent-8">
+            Sebuah string bisa menjadi satu karakter atau paragraf atau halaman.
+            Jika panjang string terlalu besar tidak muat dalam satu baris. Kita
+            dapat menggunakan karakter garis miring terbalik (\) di akhir setiap
+            baris untuk menunjukkan bahwa string akan berlanjut pada baris
+            berikutnya. Contoh :
+          </p>
+          <pre><prism language="javascript">const paragraph = "My name is Asabeneh Yetayeh. I live in Finland, Helsinki.\
+I am a teacher and I love teaching. I teach HTML, CSS, JavaScript, React, Redux, \
+Node.js, Python, Data Analysis and D3.js for anyone who is interested to learn. \
+In the end of 2019, I was thinking to expand my teaching and to reach \
+to global audience and I started a Python challenge from November 20 - December 19.\
+It was one of the most rewarding and inspiring experience.\
+Now, we are in 2020. I am enjoying preparing the 30DaysOfJavaScript challenge and \
+I hope you are enjoying too."
+
+console.log(paragraph)</prism></pre>
+        </div>
+      </div>
+      <!--String (Urutan Escape dalam String)-->
+      <div class="mt-8">
+        <h2 class="semi-title">String (Urutan Escape dalam String)</h2>
+        <div class="flex flex-col gap-5 mt-5">
+          <p class="p-main indent-8">
+            Dalam JavaScript dan bahasa pemrograman lain \ diikuti oleh beberapa
+            karakter adalah urutan pelarian. Mari kita lihat karakter pelarian
+            yang paling umum:
+          </p>
+          <ul class="flex flex-col gap-3 list-disc list-inside p-main">
+            <li><span class="underline">\n</span> : baris baru</li>
+            <li><span class="underline">\t</span> : Tab, artinya 8 spasi</li>
+            <li>
+              <span class="underline">\\</span> : Garis miring ke belakang
+            </li>
+            <li><span class="underline">\'</span> : Tanda kutip tunggal (')</li>
+            <li><span class="underline">\"</span> : Tanda kutip ganda (")</li>
+          </ul>
+          <pre><prism language="javascript">console.log('I hope everyone is enjoying the 30 Days Of JavaScript challenge.\nDo you ?') // line break
+console.log('Days\tTopics\tExercises')
+console.log('Day 1\t3\t5')
+console.log('Day 2\t3\t5')
+console.log('Day 3\t3\t5')
+console.log('Day 4\t3\t5')
+console.log('This is a backslash  symbol (\\)') // To write a backslash
+console.log('In every programming language it starts with \"Hello, World!\"')
+console.log("In every programming language it starts with \'Hello, World!\'")
+console.log('The saying \'Seeing is Believing\' isn\'t correct in 2020')</prism></pre>
+          <p class="p-main">Keluaran di konsol:</p>
+          <pre><prism language="javascript">I hope everyone is enjoying the 30 Days Of JavaScript challenge.
+Do you ?
+Days  Topics  Exercises
+Day 1 3 5
+Day 2 3 5
+Day 3 3 5
+Day 4 3 5
+This is a backslash  symbol (\)
+In every programming language it starts with "Hello, World!"
+In every programming language it starts with 'Hello, World!'
+The saying 'Seeing is Believing' isn't correct in 2020</prism></pre>
         </div>
       </div>
     </div>
