@@ -233,6 +233,100 @@ Math.cos(0)
 Math.cos(60)</prism></pre>
         </div>
       </div>
+      <!--Number (Generator Angka Acak)-->
+      <div class="mt-8">
+        <h2 class="semi-title">Number (Generator Angka Acak)</h2>
+        <div class="flex flex-col gap-5 mt-5">
+          <p class="p-main indent-8">
+            Objek Matematika JavaScript memiliki generator nomor metode
+            <span class="text-[#f7df1e]">random()</span>
+            yang menghasilkan angka dari 0 hingga 0,999999999...
+          </p>
+          <pre><prism language="javascript">let randomNum = Math.random() // generates 0 to 0.999...</prism></pre>
+          <p class="p-main indent-8">
+            Sekarang, mari kita lihat bagaimana kita dapat menggunakan metode
+            <span class="text-[#f7df1e]">random()</span> untuk menghasilkan
+            angka acak antara 0 dan 10 :
+          </p>
+          <pre><prism language="javascript">let randomNum = Math.random()         // generates 0 to 0.999
+let numBtnZeroAndTen = randomNum * 11
+
+console.log(numBtnZeroAndTen)         // this gives: min 0 and max 10.99
+
+let randomNumRoundToFloor = Math.floor(numBtnZeroAndTen)
+console.log(randomNumRoundToFloor)    // this gives between 0 and 10</prism></pre>
+        </div>
+      </div>
+      <!--String-->
+      <div class="mt-8">
+        <h2 class="semi-title">String</h2>
+        <div class="flex flex-col gap-5 mt-5">
+          <p class="p-main indent-8">
+            String adalah teks, yang berada di bawah tanda kutip single , double
+            , back-tick . Untuk mendeklarasikan string, kita memerlukan nama
+            variabel, operator penugasan, nilai di bawah tanda kutip tunggal,
+            tanda kutip ganda, atau tanda kutip balik. Mari kita lihat beberapa
+            contoh string :
+          </p>
+          <pre><prism language="javascript">let space = ' '           // an empty space string
+let firstName = 'Asabeneh'
+let lastName = 'Yetayeh'
+let country = 'Finland'
+let city = 'Helsinki'
+let language = 'JavaScript'
+let job = 'teacher'
+let quote = "The saying,'Seeing is Believing' is not correct in 2020."
+let quotWithBackTick = `The saying,'Seeing is Believing' is not correct in 2020.`</prism></pre>
+        </div>
+      </div>
+      <!--String (Penggabungan String)-->
+      <div class="mt-8">
+        <h2 class="semi-title">String (Penggabungan String)</h2>
+        <div class="flex flex-col gap-5 mt-5">
+          <p class="p-main indent-8">
+            Menghubungkan dua atau lebih string bersama-sama disebut
+            concatenation. Menggunakan string yang dideklarasikan di bagian
+            String sebelumnya:
+          </p>
+          <pre><prism language="javascript">let fullName = firstName + space + lastName; // concatenation, merging two string together.
+              console.log(fullName);</prism></pre>
+          <pre><prism language="javascript">Asabeneh Yetayeh</prism></pre>
+          <p class="p-main">
+            Kita dapat menggabungkan string dengan cara yang berbeda.
+          </p>
+        </div>
+      </div>
+      <!--String (Penggabungan String)-->
+      <div class="mt-8">
+        <h2 class="semi-title">
+          String (Menggabungkan Menggunakan Operator Penambahan)
+        </h2>
+        <div class="flex flex-col gap-5 mt-5">
+          <p class="p-main indent-8">
+            Menggabungkan menggunakan operator penjumlahan adalah cara lama.
+            Cara menggabungkan ini membosankan dan rawan kesalahan. Adalah baik
+            untuk mengetahui cara menggabungkan dengan cara ini, tetapi saya
+            sangat menyarankan untuk menggunakan string template ES6 (dijelaskan
+            nanti).
+          </p>
+          <pre><prism language="javascript">// Declaring different variables of different data types
+let space = ' '
+let firstName = 'Asabeneh'
+let lastName = 'Yetayeh'
+let country = 'Finland'
+let city = 'Helsinki'
+let language = 'JavaScript'
+let job = 'teacher'
+let age = 250
+
+
+let fullName =firstName + space + lastName
+let personInfoOne = fullName + '. I am ' + age + '. I live in ' + country; // ES5 string addition
+
+console.log(personInfoOne)</prism></pre>
+          <pre><prism language="javascript">Asabeneh Yetayeh. I am 250. I live in Finland</prism></pre>
+        </div>
+      </div>
     </div>
   </div>
 </template>
