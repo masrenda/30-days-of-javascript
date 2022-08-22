@@ -2,6 +2,12 @@
   <div class="p-5 pt-20 pb-20">
     <h1 class="text-xl text-center font-cff">Introduction</h1>
     <!--Console.log-->
+    <code class="language-css">p { color: red }</code>
+    <pre>
+      <code class="language-js">
+        const a = require('as')
+      </code>
+    </pre>
     <div class="mt-8">
       <h2 class="semi-title">Console.log</h2>
       <div class="flex flex-col gap-5 mt-5">
