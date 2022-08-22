@@ -12,7 +12,7 @@
             <router-link to="/introduction">Introduction</router-link>
           </li>
           <li>
-            <router-link to="/about">Data Types</router-link>
+            <router-link to="/datatypes">Data Types</router-link>
           </li>
           <li>
             <router-link to="/about">Booelans Operators Date</router-link>
