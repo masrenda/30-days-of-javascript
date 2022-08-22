@@ -1,5 +1,4 @@
 <template>
-  <!-- <Coba /> -->
   <Navbar />
   <HomeView />
   <Footer />
